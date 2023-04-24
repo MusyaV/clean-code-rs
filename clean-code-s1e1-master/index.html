@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  </head>
+  <body class="main-page">
+    <header class="matrix">
+      <img id="eisenhower-id" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+      <a class="more-info" 
+         href="https://goal-life.com/page/method/matrix-eisenhower">
+         Want more details?
+      </a>
+    </header>
+    <main class="main-wrapper">
+      <h3 class="title-text">Add Item</h3>
+      <div class="task-row-wrapper">
+        <input id="new-task" class="task" type="text">
+        <button>Add</button>
+      </div>
+      <h3 class="title-text">Todo</h3>
+      <ul id="plan" class="menu">
+        <li class="menu__item">
+          <input type="checkbox">
+          <label class="task">Pay Bills</label>
+          <input type="text" class="task">
+          <button class="edit-task">Edit</button>
+          <button class="delete-task">
+            <img src="./remove.svg" alt="">
+          </button>
+        </li>
+        <li class="edit-mode menu__item">
+          <input type="checkbox">
+          <label class="task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="task">
+          <button class="edit-task">Save</button>
+          <button class="delete-task">
+            <img src="./remove.svg" alt="">
+          </button>
+        </li>
+      </ul>
+      <h3 class="title-text">Completed</h3>
+      <ul id="completed" class="menu">
+        <li class="menu__item">
+          <input type="checkbox" checked>
+          <label class="task">See the Doctor</label>
+          <input type="text" class="task">
+          <button class="edit-task">Edit</button>
+          <button class="delete-task">
+            <img src="./remove.svg" alt="">
+          </button>
+        </li>
+      </ul>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
